@@ -42,7 +42,8 @@ main img {
 }
 
 .item {
-  flex: 1;
+  display: flex;
+  justify-content: space-between;
   margin: 10px;
 }
 
@@ -64,6 +65,16 @@ header {
   color: #fff;
 }
 
+header nav {
+  display: flex;
+  justify-content: center;
+}
+
+header nav ul{
+  display: flex;
+  flex-direction: row;
+}
+
 header nav ul li {
   list-style-type: none;
 }
@@ -80,6 +91,10 @@ header nav ul li a:hover {
 }
 
 /* -------  Search Form ------- */
+fieldset {
+  border-style: none;
+}
+
 form {
   border: 2px solid #ff385c;
   padding: 10px;
