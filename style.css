@@ -52,6 +52,12 @@ img {
   width: 100%;
 }
 
+.item
+img {
+  width: 100%;
+  margin: 10px 10px 10px 0;
+}
+
 .group
 .item
 img {
