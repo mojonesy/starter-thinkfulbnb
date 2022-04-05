@@ -149,3 +149,16 @@ footer p {
 }
 
 /* -------  Media Query ------- */
+
+@media all and (min-width: 480px) {
+
+  header {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px 0 20px;
+  }
+
+  header nav {
+    align-items: center;
+  }
+}
