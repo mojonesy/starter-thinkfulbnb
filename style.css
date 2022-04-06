@@ -31,7 +31,7 @@ section.alternate-background {
 }
 
 main img {
-  width: 100px;
+  width: 100%;
 }
 
 /* ---  Groups & Items --- */
@@ -124,7 +124,7 @@ form label {
 form select,
 form input {
   margin-bottom: 20px;
-  width: 180px;
+  width: 100%;
 }
 
 form button {
@@ -160,5 +160,29 @@ footer p {
 
   header nav {
     align-items: center;
+  }
+  
+  fieldset {
+    display: flex;
+    
+  }
+
+  form .group {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  form .item {
+    flex-direction: column;
+  }
+
+  form select,
+  form input {
+    margin-bottom: 0;
+    width: 100%;
+  }
+
+  form button {
+    width: 100%;
   }
 }
