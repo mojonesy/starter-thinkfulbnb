@@ -64,8 +64,10 @@ img {
   width: 100%;
 }
 
-.item-double {
-  flex: 2;
+#host
+.item {
+  display: flex;
+  flex-direction: column;
 }
 
 /* -------  Navigation ------- */
@@ -124,7 +126,7 @@ form label {
 form select,
 form input {
   margin-bottom: 20px;
-  width: 100%;
+  width: 180px;
 }
 
 form button {
@@ -161,11 +163,6 @@ footer p {
   header nav {
     align-items: center;
   }
-  
-  fieldset {
-    display: flex;
-    
-  }
 
   form .group {
     flex-direction: row;
@@ -179,10 +176,49 @@ footer p {
   form select,
   form input {
     margin-bottom: 0;
-    width: 100%;
   }
 
   form button {
-    width: 100%;
+    width: 150px;
+  }
+
+
+  .group {
+    flex: 1;
+    flex-direction: row;
+  }
+
+  .item {
+    flex: 1;
+  }
+
+  .item-double {
+    flex: 2;
+    align-items: center;
+  }
+
+  .ideasgroup {
+    display: flex;
+  }
+
+  .ideasgroup
+  .group {
+    flex-wrap: wrap;
+  }
+
+  .ideasdouble {
+    flex: 1;
+    margin: 5px;
+  }
+
+  #host {
+    display: flex;
+  }
+
+  #host 
+  .item {
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
   }
 }
