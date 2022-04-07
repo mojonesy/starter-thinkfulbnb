@@ -1,7 +1,7 @@
 /* -------  General Styles ------- */
 
 body {
-  font-family: "Lato", sans-serif;
+  font-family: 'Lato', sans-serif;
 }
 
 h2 {
@@ -43,16 +43,13 @@ main img {
 
 .item {
   flex: 1;
-  margin: 10px;
 }
 
 .item-double {
   flex: 2;
 }
 
-form
-.group
-.item {
+form .group .item {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -67,8 +64,8 @@ header {
 }
 
 .logo {
-  font-family: "Pangolin", cursive;
-  font-size: 60px;
+  font-family: 'Pangolin', cursive;
+  font-size: 32px;
   color: #fff;
 }
 
@@ -137,11 +134,11 @@ footer p {
 /* -------  Media Query ------- */
 
 @media all and (min-width: 480px) {
-
   form select,
   form input {
-  width: auto;
-}
+    width: 100%;
+    max-width: 155px;
+  }
 
   header {
     display: flex;
@@ -153,26 +150,27 @@ footer p {
   .logo {
     font-size: x-large;
   }
-  
-  form
-  .group {
+
+  .item {
+    margin: 10px;
+  }
+
+  form .group {
     display: flex;
   }
 
-  form
-  .group
-  .item {
+  form .group .item {
     flex-direction: column;
   }
 
   form button {
     flex: 1;
+    font-size: 20px;
   }
-  
+
   .group {
     display: flex;
     flex-direction: row;
     align-items: center;
   }
-  
 }
