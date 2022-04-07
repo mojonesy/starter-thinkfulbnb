@@ -42,32 +42,20 @@ main img {
 }
 
 .item {
-  display: flex;
-  justify-content: space-between;
+  flex: 1;
   margin: 10px;
 }
 
+.item-double {
+  flex: 2;
+}
+
+form
 .group
-img {
-  width: 100%;
-}
-
-.item
-img {
-  width: 100%;
-  margin: 10px 10px 10px 0;
-}
-
-.group
-.item
-img {
-  width: 100%;
-}
-
-#host
 .item {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 /* -------  Navigation ------- */
@@ -80,7 +68,7 @@ header {
 
 .logo {
   font-family: "Pangolin", cursive;
-  font-size: 72px;
+  font-size: 60px;
   color: #fff;
 }
 
@@ -89,7 +77,7 @@ header nav {
   justify-content: center;
 }
 
-header nav ul{
+header nav ul {
   display: flex;
   flex-direction: row;
 }
@@ -110,10 +98,6 @@ header nav ul li a:hover {
 }
 
 /* -------  Search Form ------- */
-fieldset {
-  border-style: none;
-}
-
 form {
   border: 2px solid #ff385c;
   padding: 10px;
@@ -154,71 +138,41 @@ footer p {
 
 @media all and (min-width: 480px) {
 
+  form select,
+  form input {
+  width: auto;
+}
+
   header {
     display: flex;
     justify-content: space-between;
-    padding: 10px 20px 0 20px;
-  }
-
-  header nav {
     align-items: center;
+    padding: 0 20px;
   }
 
-  form .group {
-    flex-direction: row;
-    justify-content: space-between;
+  .logo {
+    font-size: x-large;
+  }
+  
+  form
+  .group {
+    display: flex;
   }
 
-  form .item {
+  form
+  .group
+  .item {
     flex-direction: column;
   }
 
-  form select,
-  form input {
-    margin-bottom: 0;
-  }
-
   form button {
-    width: 150px;
+    flex: 1;
   }
-
-
+  
   .group {
-    flex: 1;
+    display: flex;
     flex-direction: row;
-  }
-
-  .item {
-    flex: 1;
-  }
-
-  .item-double {
-    flex: 2;
     align-items: center;
   }
-
-  .ideasgroup {
-    display: flex;
-  }
-
-  .ideasgroup
-  .group {
-    flex-wrap: wrap;
-  }
-
-  .ideasdouble {
-    flex: 1;
-    margin: 5px;
-  }
-
-  #host {
-    display: flex;
-  }
-
-  #host 
-  .item {
-    flex-wrap: wrap;
-    align-content: center;
-    justify-content: center;
-  }
+  
 }
